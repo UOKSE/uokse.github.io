@@ -45,12 +45,8 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
 .logo {
   vertical-align: bottom;
   margin-right: 10px;
-    width: 150px;
-}
-.nav .logo{
-	max-width:150px;
-	width: auto;
-	max-height:75px;
+  max-width: 150px;
+  max-height:40px;
 }
 
 .open-source-title {
