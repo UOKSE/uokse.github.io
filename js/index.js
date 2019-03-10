@@ -117,11 +117,11 @@ var renderPage = function(data) {
 
     function buildCategoryLabel(category) {
         var categorMap = {
-            "Data": "default",
-            "Frameworks": "primary",
+            "Default": "default",
+            "Events": "primary",
             "SysOps": "success",
             "Testing": "info",
-            "Mobile": "warning",
+            "Projects": "warning",
             "Other": "danger"
         }
         return '<span class="label project-label-' + categorMap[category] + '">' + category + '</span>';
@@ -358,8 +358,8 @@ $.getJSON(window.location.origin+"/config.json", function(config) {
     document.title = config.title;
     $(".href").attr('href', config.base_url);
     $(".git_url").attr('href', 'http://github.com/' + config.git_org_name);
-    $(".blog_url").attr('href', config.blog_url);
+    // $(".blog_url").attr('href', config.blog_url);
     $(".logo").attr('src', config.logo_url);
-    $(".gsoc").attr('href', config.child_url + 'gsoc');
+    // $(".gsoc").attr('href', config.child_url + 'gsoc');
     $("#title_main").html("Open Source at " + config.org_name);
 });
